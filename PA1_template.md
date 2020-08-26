@@ -29,6 +29,24 @@ hist(tot.steps$steps, col= "blue", main= "Total Steps per Day",
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
+```r
+dev.copy(png,"Rplot1.png")
+```
+
+```
+## png 
+##   3
+```
+
+```r
+dev.off()
+```
+
+```
+## png 
+##   2
+```
   now let's calculate the mean & the median of steps taken per day.
 
 ```r
@@ -57,6 +75,24 @@ ggplot(data=intervalMean, aes(interval, steps)) + geom_line(col="blue") + ggtitl
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+
+```r
+dev.copy(png,"Rplot2.png")
+```
+
+```
+## png 
+##   3
+```
+
+```r
+dev.off()
+```
+
+```
+## png 
+##   2
+```
   let's see which interval had the highest number of steps
 
 ```r
@@ -104,6 +140,24 @@ hist(imp_intervalsteps$steps, main = "Imputed Number of Steps Per Day",
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+
+```r
+dev.copy(png,"Rplot3.png")
+```
+
+```
+## png 
+##   3
+```
+
+```r
+dev.off()
+```
+
+```
+## png 
+##   2
+```
 
 ```r
 ###let's look at the histogram now
@@ -175,6 +229,24 @@ xyplot(steps ~ interval | weekday, layout=c(1, 2), data= mean.data, type="l", lw
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+
+```r
+dev.copy(png,"Rplot4.png")
+```
+
+```
+## png 
+##   3
+```
+
+```r
+dev.off()
+```
+
+```
+## png 
+##   2
+```
 
  
  
